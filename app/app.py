@@ -25,6 +25,12 @@ class Car(Vehicle):
     def close_trunk(self):
         self.trunk_open = False
 
+# Overriding Python methods
+class Motorcycle(Vehicle):
+    def __init__(self, center_stand_out = False):
+        self.center_stand_out = center_stand_out
+        super().__init__()
+
 print('Hello world')
 
 # Create a Python object
