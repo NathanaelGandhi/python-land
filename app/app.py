@@ -26,10 +26,13 @@ class Car(Vehicle):
         self.trunk_open = False
 
 # Overriding Python methods
+# Modified into Overriding other methods
 class Motorcycle(Vehicle):
     def __init__(self, center_stand_out = False):
         self.center_stand_out = center_stand_out
         super().__init__()
+    def start(self):
+        print("Sorry, out of fuel!")
 
 print('Hello world')
 
