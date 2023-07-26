@@ -1,21 +1,29 @@
-# Creating a Python class
-# Modified into Creating your own Python constructor
-class Car:
+# Python inheritance example
+class Vehicle:
     def __init__(self, started = False, speed = 0):
         self.started = started
         self.speed = speed
     def start(self):
         self.started = True
-        print("Car started, let's ride!")
+        print("Started, let's ride!")
+    def stop(self):
+        self.speed = 0
     def increase_speed(self, delta):
         if self.started:
             self.speed = self.speed + delta
-            print('Vrooooom!')
+            print("Vrooooom!")
         else:
-            print("You need to start the car first")
-    def stop(self):
-        self.speed = 0
-        print('Halting')
+            print("You need to start me first")
+
+# Creating a Python class
+# Modified into Creating your own Python constructor
+# Modified into Python inheritance example
+class Car(Vehicle):
+    trunk_open = False
+    def open_trunk(self):
+        self.trunk_open = True
+    def close_trunk(self):
+        self.trunk_open = False
 
 print('Hello world')
 
