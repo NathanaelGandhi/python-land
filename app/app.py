@@ -1,6 +1,9 @@
 # Creating a module
 import mymodule
 
+# Importing specific parts of a Python module
+from mymodule import my_function
+
 
 # Python inheritance example
 class Vehicle:
@@ -50,6 +53,9 @@ class Motorcycle(Vehicle):
 # Hello World
 # Modified into Creating a module
 mymodule.my_function()
+
+# Importing specific parts of a Python module
+my_function()
 
 # Create a Python object
 car = Car()
