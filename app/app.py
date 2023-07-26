@@ -16,3 +16,9 @@ class Car:
         print('Halting')
 
 print('Hello world')
+
+# Create a Python object
+car = Car()
+car.increase_speed(10)
+car.start()
+car.increase_speed(40)
