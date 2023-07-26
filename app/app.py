@@ -1,3 +1,7 @@
+# Creating a module
+import mymodule
+
+
 # Python inheritance example
 class Vehicle:
     def __init__(self, started=False, speed=0):
@@ -43,7 +47,9 @@ class Motorcycle(Vehicle):
         print("Sorry, out of fuel!")
 
 
-print("Hello world")
+# Hello World
+# Modified into Creating a module
+mymodule.my_function()
 
 # Create a Python object
 car = Car()
