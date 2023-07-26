@@ -22,3 +22,13 @@ car = Car()
 car.increase_speed(10)
 car.start()
 car.increase_speed(40)
+
+# Creating Multiple Python Objects
+car1 = Car()
+car2 = Car()
+print(id(car1))
+print(id(car2))
+car1.start()
+car1.increase_speed(10)
+print(car1.speed)
+print(car2.speed)
