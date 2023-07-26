@@ -4,6 +4,9 @@ import mymodule
 # Importing specific parts of a Python module
 from mymodule import my_function
 
+# Import aliases
+import mymodule as mymod
+
 
 # Python inheritance example
 class Vehicle:
@@ -56,6 +59,9 @@ mymodule.my_function()
 
 # Importing specific parts of a Python module
 my_function()
+
+# Import aliases
+mymod.my_function()
 
 # Create a Python object
 car = Car()
